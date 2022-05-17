@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+    -- @desarrollador: arnold márquez
+    -- @project: Web Delegación
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="other.css">
+    <!-- Link Icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <title>Iniciar sesión | Purificación Texcoco</title>
+</head>
+<body>
+
+    <div class="caja-inicio">
+        <!-- Logo -->
+        <div class="main-menu">
+            <div class="logo">
+                <a class="logo" href="principal.html"><span class="logo-span-de">Delegación</span> | Purificación</a>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div class="main-form">
+            <div class="login-form">
+                <form class="login-form-fo" action="#" method="post">
+                    <div class="login-form-fo-ti">
+                        <h3>Iniciar sesión</h3>
+                    </div>
+                    <div class="login-form-fo-date">
+                        <input class="datetext" type="email" placeholder="Example@correo.com" name="txtUser" required>
+                        <input class="datetext" type="password" placeholder="Contraseña" name="txtPass" required>
+                        <div class="fila">
+                            <label for="">Recordar mi sesion</label>
+                            <input class="che" type="checkbox" name="value" value="recordar">
+                        </div>
+                        <a class="enlace" href="registro.php">Crear una nueva cuenta</a>
+                    </div>
+                    <div class="login-form-fo-buttons">
+                        <a class="enlace-register" onclick="funcion()" id="btnCambio" href="#">¿Olvidaste la contraseña?</a>
+                        <button class="btn-primary-md" type="submit" name="btn-iniciar">Ingresar</button>
+                    </div>
+                </form>
+                <button class="btn-primary-md" id="open">Modal</button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="main-footer">
+            <div class="content-footer-de">
+                <p>&copy; 2022 Delegación | La Purificación Texcoco</p>
+            </div>
+        </div>
+        <!-- POPUP -->
+        <!--<div class="Pop" id="modal-pop">
+            <div class="content-pop">
+                <form class="form-pop" action="#" method="post">
+                    <div class="close-pop" id="close">
+                        <i class="fi fi-sr-cross"></i>
+                    </div>
+                    <div class="titulo-pop">
+                        <h3>Pagos</h3>
+                        <p>Ingresa la cantidad deseada.</p>
+                    </div>
+                    <div class="campos-pop">
+                        <div class="fila">
+                            <div class="complete">
+                                <span class="icon-pop"><i class="fi fi-sr-dollar"></i></span>
+                                <input class="datetext-xsx" type="number" placeholder="0.00" name="txtCantidad" required>
+                            </div>
+                            <input class="datetext-xsxs" type="text" placeholder="Folio" name="txtFolio" required>
+                        </div>
+                        <div class="fila">
+                            <div class="complete">
+                                <select class="datetext-xsxs" name="" id="">
+                                    <option value="1">Opcion</option>
+                                    <option value="2">Opcion</option>
+                                    <option value="3">Opcion</option>
+                                    <option value="4">Opcion</option>
+                                </select>
+                            </div>
+                            <input class="datetext-xsxs" type="text" placeholder="Estado" name="txtEstado" required>
+                        </div>
+                        <input class="datetext-xsxst" type="date" placeholder="Estado" name="txtEstado" required>
+                        <button class="btn-primary-md" type="submit" name="btnPago">Abonar</button>
+                    </div>
+                </form>
+            </div>
+        </div>-->
+        <!-- Aviso POPUP -->
+        <div class="Pop" id="modal-pop">
+            <div class="content-pop">
+                <div class="form-pop">
+                    <div class="close-pop" id="close">
+                        <i class="fi fi-sr-cross"></i>
+                    </div>
+                    <div class="aviso-pop">
+                        <i class="fi fi-sr-shield-exclamation"></i>
+                        <div class="parrafo-pop">
+                            <h3>Contraseña Incorrecta</h3>
+                            <p>Lo sentimos, vuelva a intentarlo de nuevo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,375 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* Estilos Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ font-family: 'League Spartan', sans-serif; }
+/** Navbar */
+li, a{ text-decoration: none; color: #333; }
+
+/** Caja */
+.caja-inicio{ width: 100%; height: 100vh; background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caja-inicio .main-menu{ width: auto; height: 50px; background-color: #010920; display: flex; justify-content: center; align-items: center; }
+/* Logo */
+.logo a{ font-size: 20px; color: #FFF; }
+.logo-span-de{ color: #DADFEA; }
+/* Formulario */
+.main-form{ border-bottom: 1px solid #DADFEA; width: auto; height: 550px; margin: 20px; display: flex; 
+    justify-content: center; align-items: center;
+}
+/* Footer */
+.main-footer{ padding: 10px; width: 100%; display: flex; justify-content: center; align-items: center;}
+.content-footer-de p{ font-size: 16px; color: #676767; text-align: center; }
+
+/************************************************
+************************POPUP********************
+************************************************/
+.Pop{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 65%);
+    position:fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+.Pop.show{ opacity: 10; pointer-events: auto; }
+.content-pop{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*.form-pop{
+    width: 350px;
+    height: 380px;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}*/
+.form-pop{
+    width: 350px;
+    height: 150px;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.aviso-pop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+.aviso-pop i{ font-size: 40px; color: #FFA726; }
+.aviso-pop p{ margin: 5px 0; color: #676767; }
+
+.close-pop{ width: 30px; padding: 8px 5px; text-align: center; color: #676767; font-size: 12px; margin-left: 315px; cursor: pointer; }
+.close-pop:hover{ color: #0960b1; }
+.titulo-pop{ padding: 8px 20px; border-bottom: 1px solid #DADFEA; }
+.titulo-pop h3{ font-size: 26px; font-weight: 500; } .titulo-pop p{ color: #676767; padding: 5px 0; }
+.complete{ display: flex; flex-direction: row; }
+.icon-pop{ width: 30px; height: 45px; background-color: #DCDCDC; border: 1px solid #C4C4C4; display: flex; justify-content: center;
+    align-items: center;
+    border-radius: 8px 0 0 8px;
+}
+.campos-pop{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/***************  Interfaz Iniciar sesión  ******
+************************************************/
+/* Formulario Login */
+.login-form{
+    border: 1px solid #DADFEA;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 422px;
+    height: 430px;
+}
+.login-form-fo-ti{ font-size: 24px; }
+.login-form-fo-ti h3{ font-weight: 500; }
+.login-form-fo{ padding: 30px; }
+.login-form-fo-date{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+    padding-top: 45px;
+}
+.datetext{ margin-top: 16px; }
+.enlace{ margin-top: 8px; }
+.login-form-fo-buttons{ display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; align-content: center;
+    padding-top: 45px;
+    gap: 5px;
+}
+a:hover{ color: #076ECD; }
+
+/* Termina Formulario Login */
+
+/* Registro */
+.caja-registro{
+    width: auto;
+    height: 100vh;
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.caj-titulo{
+    background-image: linear-gradient(rgba(1,9,32,65%),rgba(1,9,32,65%)), url("../tools/img/books.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    align-items: center;
+    padding-left: 80px;
+}
+.caj-ti{color: #FFF; font-weight: 500; }
+.caj-registro{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.re-form-fo{ background-color: #FAFAFA; padding: 20px; border: 1px solid #FAFAFA; border-radius: 8px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 8px 30px 0 rgba(0, 0, 0,0.2); }
+.re-form-fo-date{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 15px;
+}
+.fila{ padding-top: 5px; }
+
+/* Termina Registro */
+
+/* Agregar Documentos */
+
+.caj-doc{
+    background-color: #f9f9f9;
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    display: none;
+}
+
+.caj-doc-content{
+    margin: 50px;
+    height: 400px;
+    padding: 10px;
+    font-size: 24px;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.caj-caja{
+    width: 300px;
+    height: 300px;
+    border: 3px solid #333;
+    border-radius: 8px;
+    border-style: dashed;
+}
+
+/* Termina Agregar Documentos */
+
+/* Agendar Cita */
+.caja-cita{
+    width: auto;
+    height: 100vh;
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.caj-titulo-cita{ display: none; }
+
+/** Responsive*/
+@media (max-width: 1019px){ .caj-titulo{ display: none; } .caj-doc{ display: none; } .caja-registro{ display: grid; grid-template-columns: repeat(1, 1fr); } .caj-registro{ width: 100%; display: grid; grid-template-rows: repeat(1, 1fr); justify-content: center; }
+}
+@media screen and (max-width: 780px){
+    .caj-doc{ display: none; }
+}
+@media screen and (max-width: 750px){
+    .caja-registro{ display: grid; grid-template-columns: repeat(1, 1fr); }
+}
+@media screen and (max-width: 680px){
+    .formulario{ 
+        display: grid; 
+        padding: 0px; 
+        justify-items: center; 
+        justify-content: center; 
+        align-items: center; 
+        align-content: center; 
+        width: auto; 
+        height: auto;
+        border: none;
+        background-color: transparent;
+    }
+    .form-texto{ display: none; }
+    .form-boton{ margin-top: 0px; padding-top: 0px; }
+    .form-agendar{ display: grid; gap: 10px; align-items: center; align-content: center; justify-content: center; justify-items: center;}
+    .btn-primary { padding: 0px; margin: 0px; width: 180px;}  
+    .btn-light { padding: 0px; margin: 0px; margin-left: 10px; width: 180px; }
+}
+
+@media screen and (max-width: 670px){
+    .de-cajas{ display: grid; grid-template-columns: repeat(1, 1fr); }
+    .de-cajas .de-contenido{ padding-left: 0px; margin-left: 50px; margin-right: 50px; }
+    .de-cajas .de-mapa{ margin-top: 200px; }
+}
+
+@media screen and (max-width: 660px){
+    .caja-registro{
+        /* Grid */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-pink-md{ display: block; }
+    .caj-registro{ background-image: linear-gradient(rgba(1,9,32,65%),rgba(1,9,32,65%)), url("../img/books.jpg"); background-size: cover; background-attachment: fixed; }
+    .caj-titulo{ display: none; }
+    .re-form-fo{ padding-top: 30px; background-color: #FFF; margin: 10px; width: 400px; border: 1px solid #FFF; border-radius: 8px; align-items: center;}
+    .re-form-fo-date{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .login-form-fo-ti{ display: flex; justify-content: center; justify-items: center; align-items: center; align-content: center; }
+    .login-form-fo-buttons{ padding-bottom: 30px; }
+}
+
+@media screen and (max-width: 520px){
+    .form-boton{ display: grid; grid-template-columns: repeat(1, 1fr); gap: 10px;}
+    .btn-light{ margin-left: 0px; padding-left: 0px; }
+}
+
+@media screen and (max-width: 445px){
+    .fo-poly .fo-po{ text-align: center; }
+    .re-form-fo{ width: 380px;  padding: 5px 0px; }
+}
+@media scree and (max-width: 410px){
+    .re-form-fo{ width: 300px; }
+}
+@media screen and (max-width: 390px){
+    .main-form{ margin: 10px; }
+    .login-form-fo-date{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        gap: 5px;
+        padding-top: 5px;
+    }  
+    .login-form-fo .login-form-fo-date .datetext{ width: 250px; margin-top: 16px; }
+    .enlace{ margin-top: 8px; }
+    .login-form-fo-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        padding-top: 45px;
+        gap: 5px;
+    }
+    .login-form-fo-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 45px;
+        gap: 5px;
+    }
+    .re-form-fo-date{
+        margin-top: 10px;
+        height: 300px;
+        display: block;
+        overflow-y: scroll;
+        padding-top: 5px;
+        scroll-behavior: smooth;
+    }
+    h3{ text-align: center; }
+    .datetext-r{ margin-left: 30px; margin-top: 5px;}
+    .fila{ display: flex; flex-direction: column; justify-content: center; justify-items: center; align-items: center; align-content: center; }
+    .fila .datetext-md{ width: 220px; padding-top: 5px; margin-top: 5px; }
+    .re-form-fo{ width: 280px; height: auto; }
+    .re-form-fo .re-form-fo-date .datetext-r{ width: 220px; }
+}
+
+/* Termina Responsive */
+
+/* Estilos Extras */
+.blue{ color: #076ECD; }
+.btn-primary{ background-color: #076ECD; color: #FFF; padding: 8px; width: 250px; height: 40px; font-size: 16px; border: 2px solid #076ECD; border-radius: 5px; cursor: pointer;}
+.btn-light{ background-color: #E5E5E5; color: #676767; padding: 8px; width: 250px; height: 40px; font-size: 16px; border: 2px solid #E5E5E5; border-radius: 5px; cursor: pointer;}
+.btn-primary-md{ background-color: #076ECD; color: #FFF; padding: 8px; width: 135px; height: 40px; font-size: 16px; border: 2px solid #076ECD; border-radius: 5px; cursor: pointer; padding-left: 10px;}
+.btn-pink{ background-color: #F2065B; color: #FFF; padding: 8px; width: 300px; height: 55px; font-size: 20px; border: 2px solid #F2065B; border-radius: 5px; cursor: pointer; }
+.btn-pink-md{ background-color: #F2065B; color: #FFF; padding: 8px; width: 135px; height: 40px; font-size: 16px; border: 2px solid #F2065B; border-radius: 5px; cursor: pointer; }
+.form-plus{ color: #076ECD; font-size: 14px; }
+.pu-form-plus{ color: #676767; font-size: 14px; }
+.titulo{ font-size: 36px; font-weight: 400; }
+.ti-dele{ font-size: 48px; }
+button{ font-family: 'League Spartan', sans-serif; font-size: 24px; padding: 10px; }
+label{ font-size: 14px; font-weight: 400; color: #676767; }
+.fila{ display: flex; flex-direction: row; gap: 10px; }
+
+/* HR */
+.de-cajas .de-contenido .de-div{ width: 100%; margin-left: 0%; background-color: #E5E5E5; height: 3px; margin-top: 5px; }
+.fo-espacio{ width: 80%; background-color: #E5E5E5; height: 3px; margin-top: 5px; display: flex; justify-content: center; align-items: center; }
+
+/* Estilos Input */
+.datetext{ width: 338px; height: 55px; background-color: #f9f9f9; border: 1px solid #f9f9f9; border-radius: 8px; color: #676767; padding: 5px; outline: none; margin-top: 10px; }
+.datetext-r{ width: 338px; height: 55px; background-color: #f9f9f9; border: 1px solid #f9f9f9; border-radius: 8px; color: #676767; padding: 5px; outline: none; margin-top: 10px; }
+.datetext-md{ width: 169px; height: 55px; background-color: #f9f9f9; border: 1px solid #f9f9f9; border-radius: 8px; color: #676767; padding: 5px; outline: none; margin-top: 10px; }
+.datetext-xs{ width: 150px; height: 38px; background-color: #f9f9f9; border: 1px solid #f9f9f9; border-radius: 8px; color: #676767; padding: 5px; outline: none;}
+.datetext-xsx{ width: 100px; height: 45px; background-color: #FFF; border: 1px solid #C4C4C4; color: #676767; padding: 5px 10px; outline: none;
+    border-radius: 0 8px 8px 0;
+}
+.datetext-xsxs{ width: 130px; height: 45px; background-color: #FFF; border: 1px solid #C4C4C4; color: #676767; padding: 5px 10px; outline: none;
+    border-radius: 8px;
+}
+.datetext-xsxst{ width: 140px; height: 45px; background-color: #FFF; border: 1px solid #C4C4C4; color: #676767; padding: 5px 10px; outline: none;
+    border-radius: 8px;
+}
+/* Hovers */
+.btn-primary:hover{ background-color: #0960b1; border: 2px solid #0960b1; border-radius: 5px; cursor: pointer;}
+.btn-primary-md:hover{ background-color: #0960b1; border: 2px solid #0960b1; border-radius: 5px; cursor: pointer; }
+.btn-light:hover{ background-color: #dddddd; border: 2px solid #dddddd; border-radius: 5px; cursor: pointer;}
+a .form-plus:hover{ color: #0960b1; }
+textarea{ font-family: 'League Spartan', sans-serif; font-size: 16px; padding: 10px; }
+input{ font-family: 'League Spartan', sans-serif; font-size: 16px; padding: 10px; }
+select{ font-family: 'League Spartan', sans-serif; font-size: 16px; padding: 10px; }
