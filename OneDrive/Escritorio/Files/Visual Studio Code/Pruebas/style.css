@@ -6,3 +6,12 @@
 body{ background-color: #444; color: #FFF; font-family: Arial;
     font-weight: 400;
 }
+
+img{ object-fit: cover; }
+.caja{
+    background-color: #FFF;
+    width: 500px;
+    padding: 50px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
